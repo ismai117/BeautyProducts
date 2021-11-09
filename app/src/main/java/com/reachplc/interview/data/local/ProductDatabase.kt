@@ -13,7 +13,4 @@ abstract class ProductDatabase : RoomDatabase() {
 
     abstract fun getProductDao(): ProductDao
 
-    companion object {
-        val TABLE_NAME = "product_table"
-    }
 }

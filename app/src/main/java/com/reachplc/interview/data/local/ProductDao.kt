@@ -23,4 +23,5 @@ interface ProductDao {
     @Query("SELECT * FROM product_table WHERE name LIKE :product")
     fun searchDatabase(product: String): Flow<List<Model>>
 
+
 }

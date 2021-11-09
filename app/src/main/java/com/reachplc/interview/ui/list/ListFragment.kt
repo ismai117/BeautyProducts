@@ -103,7 +103,6 @@ class ListFragment : Fragment() {
 
             Log.d("search", "$it")
 
-
         })
 
     }

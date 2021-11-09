@@ -11,5 +11,13 @@
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:title="search" />
 
-</menu>
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/ic_baseline_sort_24"
+        tools:targetApi="o"
+        android:title="sort"
+        android:iconTint="@color/white"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.MenuPopupWindow$MenuDropDownListView"/>
 
+</menu>

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
+import com.google.android.material.snackbar.Snackbar
 import com.reachplc.interview.R
 import com.reachplc.interview.databinding.FragmentDetailBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -50,6 +51,11 @@ class DetailFragment : Fragment() {
         binding.itemName.text = name
         binding.itemDescription.text = description
         binding.itemPrice.text = price
+
+
+        binding.addtocartBtn.setOnClickListener {
+            Snackbar.make(binding.detailCoord, "Added to cart", Snackbar.LENGTH_LONG).show()
+        }
 
         return view
     }
